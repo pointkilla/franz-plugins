@@ -6,15 +6,18 @@
   "author": "Brian Retterer <bretterer@gmail.com>",
   "license": "MIT",
   "config": {
-    "serviceURL": "https://trello.com/login",
+    "serviceURL": "https://trello.com/login?returnUrl={teamID}",
     "serviceName": "Trello",
-    "message": "",
-    "popup": [],
+    "message": "*If you want to start with a specific board instead of the teampage you must insert %2Fb%2F[[BoardID]] as your team name (You will find the ID in your Browser URL) <br/><br/>Example URL: https://trello.com/b/boardid/boardname <br/>Example Input: %2Fb%2Fboardid",
     "hasNotificationSound": false,
     "hasIndirectMessages": false,
-    "hasTeamID": false,
+    "hasTeamID": true,
     "customURL": false,
     "hostedOnly": false,
+	"wording": {
+        "url": "",
+        "team": "BoardID* or "
+    },
     "webviewOptions": {
       "disablewebsecurity": ""
     },
